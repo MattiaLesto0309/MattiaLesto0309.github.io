@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Crea il tuo sito web straordinario con effetti 3D e animazioni mozzafiato. Trasformiamo la tua visione in realtà digitale.">
+    <meta name="keywords" content="siti web, sviluppo web, 3D, animazioni, web design, sviluppo app, portfolio digitale">
+    <meta name="author" content="Il Tuo Nome">
+    <meta property="og:title" content="Web Creator Pro - Siti Web con Effetti 3D">
+    <meta property="og:description" content="Crea il tuo sito web straordinario con effetti 3D e animazioni mozzafiato.">
+    <meta property="og:image" content="/images/og-image.jpg">
+    <meta property="og:url" content="https://tuosito.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>MattiaAlbano - Siti Web con Effetti 3D</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+</head>
+<body class="light-theme">
+    <nav class="navbar">
+        <div class="logo">Mattia<span>Albano</span></div>
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#servizi" class="nav-link">Servizi</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#contatti" class="nav-link">Contatti</a>
+                <div class="theme-switch-wrapper2">
+                    <input type="checkbox" id="theme-toggle" class="theme-checkbox" aria-label="Cambia tema">
+                    <label for="theme-toggle" class="theme-toggle">
+                        <div class="theme-toggle-thumb">
+                            <span class="sun">☀️</span>
+                            <span class="moon">🌙</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="theme-switch-wrapper">
+            <input type="checkbox" id="theme-toggle" class="theme-checkbox" aria-label="Cambia tema">
+            <label for="theme-toggle" class="theme-toggle">
+                <div class="theme-toggle-thumb">
+                    <span class="sun">☀️</span>
+                    <span class="moon">🌙</span>
+                </div>
+            </label>
+        </div>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Trasforma la Tua Visione in Realtà</h1>
+                <div class="hero-line"></div>
+                <p class="hero-subtitle">Creiamo esperienze web straordinarie con animazioni 3D e design innovativo</p>
+                <a href="#contatti" class="cta-button">Iniziamo il Progetto</a>
+            </div>
+            <div id="canvas-container"></div>
+        </section>
+
+        <section id="servizi" class="services">
+            <div class="services-bg" id="services-3d-bg"></div>
+            <div class="services-content">
+                <h2>I Nostri Servizi</h2>
+                <div class="services-3d-grid">
+                    <div class="service-card-3d" data-service="web">
+                        <div class="service-card-inner">
+                            <div class="service-card-front">
+                                <div class="service-icon">💻</div>
+                                <h3>Sviluppo Web</h3>
+                            </div>
+                            <div class="service-card-back">
+                                <p>Siti web personalizzati con le ultime tecnologie e framework moderni.</p>
+                                <button class="service-cta">Scopri di più</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card-3d" data-service="mobile">
+                        <div class="service-card-inner">
+                            <div class="service-card-front">
+                                <div class="service-icon">📱</div>
+                                <h3>App Mobile</h3>
+                            </div>
+                            <div class="service-card-back">
+                                <p>Applicazioni ibride e native per iOS e Android.</p>
+                                <button class="service-cta">Scopri di più</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card-3d" data-service="design">
+                        <div class="service-card-inner">
+                            <div class="service-card-front">
+                                <div class="service-icon">🎨</div>
+                                <h3>UI/UX Design</h3>
+                            </div>
+                            <div class="service-card-back">
+                                <p>Interfacce utente intuitive e coinvolgenti.</p>
+                                <button class="service-cta">Scopri di più</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <h2>Il Nostro Portfolio</h2>
+            <div class="portfolio-grid">
+                <!-- Gli elementi del portfolio verranno generati dinamicamente via JavaScript -->
+            </div>
+        </section>
+
+        <section id="contatti" class="contact">
+            <h2>Mettiamoci in Contatto</h2>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required placeholder="Il Tuo Nome">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required placeholder="La Tua Email">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" required placeholder="Raccontaci del tuo progetto"></textarea>
+                </div>
+                <button type="submit" class="cta-button">Invia Messaggio</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MattiaAlbano</h3>
+                <p>Creiamo esperienze digitali indimenticabili.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Link Utili</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#servizi">Servizi</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contatti">Contatti</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contattaci</h3>
+                <p>Email: mattiaalbano@gmail.com</p>
+                <p>Telefono: +39 375 552 2990</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MattiaAlbano. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
