@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /admin/
-Disallow: /includes/
-
-Sitemap: https://tuosito.com/sitemap.xml
